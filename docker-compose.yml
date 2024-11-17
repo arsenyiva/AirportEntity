@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mypostgres:
+    image: postgres:latest
+    container_name: Airport
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: airport
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+
